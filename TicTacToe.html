@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Free Tic Tac Toe online</title>
+  <meta charset=UTF-8>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <link rel="stylesheet" type="text/css" href="css/game.css"
+  <script src="javascript/tictactoe.js"></script>
+</head>
+
+<body>
+  <h1 class="title">Play Tic Tac Toe Free online!</h1>
+    <!-- This container is needed to overlay our canvas over our table -->
+    <div class='center container'>
+        <!-- Note: cnavas width and height must be set within the element-->
+        <canvas id='win-lines' width='608' height= '608'></canvas>
+        <table>
+            <tr>
+              <td id='0' onclick='placeXorO("0")'></td>
+              <td id='1' onclick='placeXorO("1")'></td>
+              <td id='2' onclick='placeXorO("2")'></td>
+            </tr>
+            <tr>
+              <td id='3' onclick='placeXorO("3")'></td>
+              <td id='4' onclick='placeXorO("4")'></td>
+              <td id='5' onclick='placeXorO("5")'></td>
+            </tr>
+            <tr>
+              <td id='6' onclick='placeXorO("6")'></td>
+              <td id='7' onclick='placeXorO("7")'></td>
+              <td id='8' onclick='placeXorO("8")'></td>
+            </tr>
+        </table>
+    </div>
+
+
+
+
+
+  </body>
+</html>
