@@ -93,7 +93,7 @@ function placeXorO(squareNumber) {
     // O 0, 3, 6 condition.
     else if (arrayIncludes('0O', '3O', '6O')) { drawWinLine(100, 50, 100, 558); }
     // o 1, 4, 7 condition
-    else if(arrayIncludes('1O', '4O', '7O')) { drawWinLine(304, 50, 304, 558); }
+    else if (arrayIncludes('1O', '4O', '7O')) { drawWinLine(304, 50, 304, 558); }
     // O 2, 5, 8 condition.
     else if (arrayIncludes('2O', '5O', '8O')) { drawWinLine(508, 50, 508, 558); }
     // O 6, 4, 2 condition
@@ -124,9 +124,9 @@ function placeXorO(squareNumber) {
   //this function makes our body element temporarily unclickable.
   function disableClick() {
     //this makes our body unclickable.
-    body.style.pointerEvents = 'none';
+    document.body.style.pointerEvents = 'none';
     //this makes our body clickable again after 1 second.
-    setTimeout(function() {body.style.pointerEvents = 'auto';}, 1000);
+    setTimeout(function() {document.body.style.pointerEvents = 'auto';}, 1000);
   }
 
   // this function takes a string parameter of the path you set earlier for 
